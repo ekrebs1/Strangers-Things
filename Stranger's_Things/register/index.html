@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Register Form</title>
+  <link rel="stylesheet" href="register.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="register.js"></script>
+</head>
+<body>
+
+  <div class='bold-line'></div>
+  <div class='container'>
+    <div class='window'>
+      <div class='overlay'></div>
+      <div class='content'>
+        <div class='welcome'>Register Here!</div>
+        <div class='subtitle'>Welcome to Stranger's Things! Please fill out this form to register an account.</div>
+        <form id="register-form">
+        <div class='input-fields'>
+          <input type='text' placeholder='Enter Username' class='username full-width' id="username" required pattern=".{8,}" required title="8 characters minimum"></input>
+          
+          <input type='password' placeholder='Enter Password' class='password full-width' id="password" required pattern=".{8,}" required title="8 characters minimum"></input>
+  
+        </div>
+        <div class='spacing'>Already have an account?
+          <span class='highlight'>
+            <a href="/login/index.html">
+                Log In!</span></div></a>
+        <div>
+          <span class='highlight'>
+            <button type="submit" class='register-btn full-width'>
+            <a href="/login/index.html"></a>
+            Register</button></div></span>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>

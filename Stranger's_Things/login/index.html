@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Login Form</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="login.js"></script>
+</head>
+<body>
+
+  <div class='bold-line'></div>
+  <div class='container'>
+    <div class='window'>
+      <div class='overlay'></div>
+      <div class='content'>
+        <div class='welcome'>Hello There!</div>
+        <div class='subtitle'>Welcome to Stranger's Things! Please fill out this form to log in.</div>
+        <form id="login-form">
+        <div class='input-fields'>
+          <input type='text' placeholder='Enter Username' class='username full-width' id="username" required pattern=".{8,}" required title="8 characters minimum"></input>
+          
+          <input type='password' placeholder='Enter Password' class='password full-width' id="password" required pattern=".{8,}" required title="8 characters minimum"></input>
+  
+        </div>
+        <div class='spacing'>Don't have an account? 
+          <span class='highlight'>
+            <a href="/register/index.html">
+            Register!</span></div></a>
+        <div>
+          <button type="submit" class='login-btn full-width'>
+            <a href="/index.html"></a>
+            Log In</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
